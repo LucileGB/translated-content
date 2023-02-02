@@ -60,36 +60,38 @@ Pour une bonne comparaison (mais potentiellement biaisée) entre Vue et plusieur
 
 Pour utiliser Vue dans un site existant, vous pouvez déposer l’un des éléments suivants sur une page. Cela vous permet de commencer à utiliser Vue sur les sites existants, c’est pourquoi Vue se targue d’être un cadre progressif. Il s’agit d’une excellente option lors de la migration d’un projet existant à l’aide d’une bibliothèque comme JQuery à Vue. Avec cette méthode, vous pouvez utiliser un grand nombre des fonctionnalités de base de Vue, telles que les attributs, les composants personnalisés et la gestion des données.[`<script>`](/fr/docs/Web/HTML/Element/script)
 
-- Script de développement (Non optimisé, mais inclut les avertissements de console. Idéal pour le développement
+- Script de développement (Non optimisé, mais inclut les avertissements de console, ce qui le rend idéal pour le développement.)
 
   ```html
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   ```
 
-- Production Script (Optimized version, minimal console warnings. It is recommended that you specify a version number when including Vue on your site so that any framework updates do not break your live site without you knowing.)
+- Script de production (Version optimisée, mais qui donne très peu d'avertissement console. Lorsque vous adjoignez Vue à votre site, il est recommandé de spécifier le numéro de la version afin que votre site ne casse pas à chaque mise à jour du cadre.)
 
   ```html
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   ```
 
-However, this approach has some limitations. To build more complex apps, you’ll want to use the [Vue NPM package](https://www.npmjs.com/package/vue). This will let you use advanced features of Vue and take advantage of bundlers like WebPack. To make building apps with Vue easier, there is a CLI to streamline the development process. To use the npm package & the CLI you will need:
+Cependant, cette approche a ses limites. Si vous souhaitez construire des applications plus complexes, utilisez plutôt le [paquet Vue NPM](https://www.npmjs.com/package/vue). Cela vous permettra d'utiliser les fonctionnalités les plus avancées de Vue et de bénéficier d'un groupeur de paquet comme WebPack. Une interface de ligne de commande est disponible afin de faciliter la conception d'applis avec Vue. Pour utiliser le paquet npm et l'interface, vous aurez besoin de deux choses :
 
-1. Node.js 8.11+ installed.
-2. npm or yarn.
+1. Node.js 8.11+ installé
+2. npm ou yarn.
 
-> **Note :** If you don't have the above installed, find out [more about installing npm and Node.js](/fr/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#Adding_powerups) here.
+> **Note :** Si aucun des deux n'est installé sur votre ordinateur, vous pouvez apprendre [comment installer npm et Node.js](/fr/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#Adding_powerups) ici.
 
-To install the CLI, run the following command in your terminal:
+Pour installer l'interface de ligne de commande, lancez la commande suivante dans votre terminal :
 
 ```bash
 npm install --global @vue/cli
 ```
 
-Or if you'd prefer to use yarn:
+Ou, si vous préférez utiliser yarn :
 
 ```bash
 yarn global add @vue/cli
 ```
+
+Une fois l'installation finie, vous pouvez commencer un nouveau projet en ouvrant votre terminal dans le dossier où vous voulez créer votre projet, XXX
 
 Once installed, to initialize a new project you can then open a terminal in the directory you want to create the project in, and run . The CLI will then give you a list of project configurations you can use. There are a few preset ones, and you can make your own. These options let you configure things like TypeScript, linting, vue-router, testing, and more. `vue create <project-name>`
 
